@@ -1,0 +1,63 @@
+.icon {
+  display: flex;
+}
+
+.icon::before {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.folder::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f07b";
+}
+.folder-open::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f07c";
+}
+
+.dir-name, 
+.file-name {
+  cursor: pointer;
+  user-select: none;
+  width: 100%;
+}
+
+.dir-container {
+  display: flex;
+  flex-flow: column;
+  padding: 0.25rem 0rem;
+}
+.dir-name-container {
+  display: flex;
+}
+.dir-name {
+  // display: flex;
+}
+.dir-file-container {
+  display: flex;
+  flex-flow: column;
+  padding-left: 0.5rem;
+}
+.file-container {
+  border-left: 1px solid black;
+  padding-left: 1rem;
+  // display: flex;
+}
+.file-name {
+  // display: flex;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+
+.hide { display: none }
+.show { display: block }
