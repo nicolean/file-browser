@@ -2,11 +2,10 @@
 
 ## A very simple plugin to create a very simple file browser
 
-### Getting Started
-
-#### Dependencies  
+### Dependencies  
 - [Fontawesome](https://fontawesome.com/) is currently in use for the folder and file icons--support for user-supplied classnames is planned
 
+### Getting Started
 
 Include the `file-browser.js` plugin and Fontawesome in your project.
 
