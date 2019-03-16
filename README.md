@@ -7,16 +7,22 @@
 Include the file-browser.js library in your project.
 
 Add a `div` with an id  
-`<div id="file-browser"></div>`
+```html
+<div id="file-browser"></div>
+```
 
 Provide an array of your directory/file structure in the following format  
-`const testData = [{  
-    name: 'Directory Name',
-    files: ['file one', 'file two', 'file three', 'file four', 'file five']
-  }];`
+```javascript
+const testData = [{  
+  name: 'Directory Name',
+  files: ['file one', 'file two', 'file three', 'file four', 'file five']
+}];
+```
 
 Call the FileBrowser.init() function with the `div` id and data   
-`FileBrowser.init({
+```javascript
+FileBrowser.init({
   container: 'file-browser',
   data: testData
-})`
+})
+```
