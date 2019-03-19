@@ -9,7 +9,7 @@
   </head>
 
   <style>
-    body { font-family: 'Karla', sans-serif; }
+    body { font-family: sans-serif; }
   </style>
 
   <body>
@@ -34,11 +34,16 @@
           name: 'is',
           files: ['file one', 'file two', 'file three', 'file four', 'file five']
         }
-      ];
+      ];      
+      
+      function fileClick(e) { 
+        console.log(e.target);
+       }
 
       FileBrowser.init({
         container: 'file-browser',
-        data: testData
+        data: testData,
+        onClick: 'fileClick'
       })
     </script>
   </body>

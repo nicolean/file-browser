@@ -11,6 +11,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
+.folder {
+  cursor: pointer;
+}
+
 .folder::before {
   font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f07b";
 }
@@ -22,7 +26,6 @@
 .file-name {
   cursor: pointer;
   user-select: none;
-  width: 100%;
 }
 
 .dir-container {
@@ -32,6 +35,8 @@
 }
 .dir-name-container {
   display: flex;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
 }
 .dir-name {
   // display: flex;
@@ -39,15 +44,34 @@
 .dir-file-container {
   display: flex;
   flex-flow: column;
+  max-height: 10rem;
   padding-left: 0.5rem;
+  overflow-y: hidden;
+  transition: max-height 0.2s linear;
 }
 .file-container {
-  border-left: 1px solid black;
-  padding-left: 1rem;
+  // border-left: 1px solid black;
+  // padding-left: 1rem;
+  line-height: 1.35rem;
   // display: flex;
+  // flex-flow: row;
 }
+
+.file-inner-container {
+  height: 100%;
+  display: flex;
+}
+
+.file-line {
+  width: 0.75rem;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  margin-right: 0.25rem;
+  display: flex;
+}
+
 .file-name {
-  // display: flex;
+  display: flex;
 }
 
 .red {
@@ -58,6 +82,6 @@
   color: green;
 }
 
-
-.hide { display: none }
-.show { display: block }
+.hide { 
+  max-height: 0rem; 
+}
